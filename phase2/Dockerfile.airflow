@@ -1,0 +1,4 @@
+FROM apache/airflow:2.9.0
+
+USER airflow
+RUN python -m pip install --no-cache-dir requests beautifulsoup4 lxml langdetect boto3 psycopg2-binary

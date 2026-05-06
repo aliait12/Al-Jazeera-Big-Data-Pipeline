@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Data Lake (Local storage)
+data/
+*.json
+*.csv
+
+# Docker / Airflow
+logs/
+airflow-*.err
+airflow-*.out
+airflow-*.log
+airflow-*.pid
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+screenshots/*.png
+!screenshots/.gitkeep

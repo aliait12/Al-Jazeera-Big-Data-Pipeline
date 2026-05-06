@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  scraper:
+    build: ./scraper
+    container_name: aljazeera_scraper
+    volumes:
+      - ./data/bronze:/app/data
+    environment:
+      - OUTPUT_DIR=/app/data/bronze
+    restart: "no"
